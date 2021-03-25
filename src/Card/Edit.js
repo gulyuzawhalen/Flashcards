@@ -12,7 +12,7 @@ function CardEdit({ title }) {
 
     useEffect(() => {
         readDeck(deckId).then(setDeck);
-        readDeck(cardId).then(setCard);
+        readCard(cardId).then(setCard);
     }, [deckId, cardId]);
     function submitHandler(card) {
         updateCard(card).then(doneHandler);
