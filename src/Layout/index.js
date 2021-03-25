@@ -1,5 +1,5 @@
 import React from "react";
-import { Redirect, Route, Switch, useRouteMatch } from "react-router-dom";
+import { Redirect, Route, Switch } from "react-router-dom";
 import Home from "../Home";
 import Study from "../Deck/Study/StudyCard";
 import NotFound from "./NotFound";
@@ -11,7 +11,6 @@ import CardCreate from "../Card/Create";
 import DeckCreate from "../Deck/Create";
 
 function Layout() {
-  const {url} = useRouteMatch();
   return (
     <>
       <Header />
